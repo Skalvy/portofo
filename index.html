@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a class="logo" href="#">Portfolio<span>.</span></a>
+            <a class="nav-link" href="#about">Обо мне</a>
+            <a class="nav-link" href="#skills">Навыки</a>
+            <a class="nav-link" href="#contacts">Контакты</a>
+        </nav>
+
+        <main class="intro">
+            <div class="intro-text">
+                <p class="eyebrow">Привет! Меня зовут</p>
+                <h1>Адиль</h1>
+                <p class="subtitle">Студент · Начинающий веб-разработчик</p>
+                <p class="intro-description">
+                    Изучаю создание сайтов, интересуюсь современным дизайном
+                    и хочу развиваться в сфере информационных технологий.
+                </p>
+                <a class="button" href="#contacts">Связаться со мной</a>
+            </div>
+            <div class="avatar" aria-label="Аватар">
+                <div class="avatar-circle">
+                    <span>👨‍💻</span>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <section class="section" id="about">
+        <div class="section-heading">
+            <p class="eyebrow">Немного обо мне</p>
+            <h2>Обо мне</h2>
+        </div>
+        <div class="about-card">
+            <p>
+                Я студент, который изучает HTML и CSS. Мне нравится создавать
+                красивые и удобные веб-страницы, пробовать новые технологии
+                и работать над собственными проектами. В свободное время
+                развиваю свои навыки и учусь новому.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="section-heading">
+            <p class="eyebrow">Что я умею</p>
+            <h2>Мои навыки</h2>
+        </div>
+        <div class="skills-grid">
+            <article class="skill-card">
+                <div class="skill-icon">HTML</div>
+                <h3>HTML</h3>
+                <p>Создание структуры веб-страниц</p>
+            </article>
+            <article class="skill-card">
+                <div class="skill-icon">CSS</div>
+                <h3>CSS</h3>
+                <p>Оформление и стилизация сайтов</p>
+            </article>
+            <article class="skill-card">
+                <div class="skill-icon">UI</div>
+                <h3>Дизайн</h3>
+                <p>Работа с цветами и макетами</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="hobbies">
+        <div class="section-heading">
+            <p class="eyebrow">Чем увлекаюсь</p>
+            <h2>Мои увлечения</h2>
+        </div>
+        <ul class="hobbies-list">
+            <li>💻 Программирование</li>
+            <li>🎨 Веб-дизайн</li>
+            <li>🎮 Компьютерные игры</li>
+            <li>🎵 Музыка</li>
+        </ul>
+    </section>
+
+    <section class="section section-alt" id="contacts">
+        <div class="section-heading">
+            <p class="eyebrow">Будем на связи</p>
+            <h2>Контакты</h2>
+        </div>
+        <div class="contact-card">
+            <p><strong>Email:</strong> example@email.com</p>
+            <p><strong>Телефон:</strong> +7 (___) ___-__-__</p>
+            <button class="button" id="contactButton" type="button">Связаться со мной</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Моё портфолио. Создано с помощью HTML и CSS.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactButton").addEventListener("click", function () {
+            alert("Спасибо за интерес к моему портфолио! Свяжитесь со мной по указанным контактам.");
+        });
+    </script>
+</body>
+</html>
